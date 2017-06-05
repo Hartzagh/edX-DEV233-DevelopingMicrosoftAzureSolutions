@@ -7,11 +7,11 @@
     @foreach (Event item in Model.Events)
     {
         <a class="list-group-item list-group-item-action" href="@Url.Action("Event", new { id = item.EventKey })">
+            <span class="list-group-progress" style="width:75%;"></span>
             <h5 class="list-group-item-heading">
                 @item.Title
                 @if (item.Registrants.Count > 0)
                 {
-                    <span class="list-group-progress" style="width:75%;"></span>
                     <span class="label label-info pull-right">
                         @item.Registrants.Count Registered
                     </span>
