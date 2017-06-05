@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    @using (Html.BeginForm())
+    {
+        <p>
+            Title: @Html.TextBox("SearchString") <br />
+            <input type="submit" value="Filter" />
+        </p> 
+    }
+    </div>
+</body>
+</html>
