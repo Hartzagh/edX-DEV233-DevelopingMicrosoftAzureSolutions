@@ -31,7 +31,7 @@ namespace Contoso.Events.Web.Controllers
                 searchTerm = "*";
             }
 
-            string url = $"https://aa-events-prod-search.search.windows.net/indexes/aa-events-index/docs?search={searchTerm}&api-version=2016-09-01";
+            string url = $"https://dev233.search.windows.net/indexes/temp/docs?search={searchTerm}&api-version=2016-09-01";
 
             var req = new HttpRequestMessage(HttpMethod.Get, url);
             string accessKey = ConfigurationManager.AppSettings["SearchAccessKey"];
