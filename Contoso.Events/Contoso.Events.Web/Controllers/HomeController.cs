@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 
 namespace Contoso.Events.Web.Controllers
 {
+    
     public class HomeController : Controller
     {
         private static readonly HttpClient Client = new HttpClient();
